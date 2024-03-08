@@ -10,15 +10,17 @@ def load_accounts(file_path):
     except FileNotFoundError:
         return {"users": []}
 
+
 # Function to save updated accounts to a JSON file
 def save_accounts(accounts, file_path):
     with open(file_path, 'w') as file:
         json.dump(accounts, file, indent=4)
 
+
 # Function to handle the account settings
 def account_settings(user, accounts_file):
     while True:
-        print("\nWelcome to the Account Settings")
+        print("\nWelcome to the Account Settings meow!")
         print("Please select one from the following options:")
         print("Press [1] to Change Username")
         print("Press [2] to Change Password")
@@ -55,6 +57,7 @@ def account_settings(user, accounts_file):
             quit()
         else:
             print("Invalid choice. Please try again.")
+
 
 # Main entry point
 if __name__ == "__main__":

@@ -1,7 +1,6 @@
 import json
 import bcrypt
 
-
 # Function to load existing accounts from a JSON file
 def load_accounts(file_path):
     try:
@@ -23,7 +22,7 @@ def register_account(accounts_file):
     
     while True:
         # Prompt user for username
-        username = input("Enter your username: ")
+        username = input("Please enter your username: ")
         # Check if username is already in use
         if any(user['username'] == username for user in accounts['users']):
             print("Username already in use. Please choose a different username.")
@@ -38,8 +37,8 @@ def register_account(accounts_file):
     
     while True:
         # Prompt user for password and hash it
-        password = input("Enter your password: ")
-        confirm_password = input("Confirm your password: ")
+        password = input("Please enter your password: ")
+        confirm_password = input("Please confirm your password: ")
         if password != confirm_password:
             print("Passwords do not match. Please try again.")
             continue
@@ -65,7 +64,7 @@ def register_account(accounts_file):
     # Add the new user to the accounts data and save it
     accounts['users'].append(new_user)
     save_accounts(accounts, accounts_file)
-    print("Account created successfully.")
+    print("Account created successfully meow! You can now login.")
 
 
 # Main entry point

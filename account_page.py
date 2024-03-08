@@ -10,10 +10,12 @@ def load_accounts(file_path):
     except FileNotFoundError:
         return {"users": []}
 
+
 # Function to save updated accounts to a JSON file
 def save_accounts(accounts, file_path):
     with open(file_path, 'w') as file:
         json.dump(accounts, file, indent=4)
+
 
 # Function to handle the account page
 def account_page(user, accounts_file):
@@ -44,6 +46,7 @@ def account_page(user, accounts_file):
             return
         else:
             print("Invalid choice. Please try again.")
+
 
 # Main entry point
 if __name__ == "__main__":
