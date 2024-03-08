@@ -1,5 +1,6 @@
 # Meow-Money-Personal-finance-tracking-
 Author: Pawarisa Saiyut
+
 Type of project: Personal interest
 
 Meow Money is a simple finance management tool for tracking income, expenses, items in storage, and items in usage. It provides features that allow the user to create accounts, login, update their financial actions, and update items they have bought/use, including the simple prediction for when the frequently used items will run out (so the users can have rough plan of their future expense)
